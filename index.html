@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yasin Mahmut Sariaslan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.jpg" type="image/x-icon" />
+    <meta name="theme-color" content="#4fc3f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d47a1" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Yasin Mahmut Sariaslan" />
+</head>
+<body>
+
+ 
+    <button id="theme-toggle" aria-label="Toggle dark/light theme" style="position: fixed; top: 10px; left: 10px; background: none; border: none; cursor: pointer; font-size: 24px;">
+        🌙
+    </button>
+
+    <div class="language-toggle" style="position: fixed; top: 10px; right: 10px;">
+        <button id="lang-en" class="lang-btn active">EN</button>
+        <button id="lang-tr" class="lang-btn">TR</button>
+    </div>
+
+    <header>
+        <img src="yasin.jpg" alt="Yasin Mahmut Sariaslan" class="profile-pic" id="profilePhoto" />
+
+<div id="profile-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Profile Image Enlarged">
+</div>
+
+        <h1 data-en="Yasin Mahmut Sariaslan" data-tr="Yasin Mahmut Sariaslan">Yasin Mahmut Sariaslan</h1>
+        <p data-en="Second-Year Computer Engineering Student" data-tr="Bilgisayar Mühendisliği 2. Sınıf Öğrencisi">Second-Year Computer Engineering Student</p>
+
+        <div class="contact-info">
+            <a href="mailto:yasin.sariaslann@gmail.com" aria-label="Email" data-en="Email" data-tr="E-posta">📧 Email</a>
+            <a href="https://github.com/1283ys" target="_blank" rel="noopener" aria-label="GitHub" data-en="GitHub" data-tr="GitHub">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/yasin-sariaslan/" target="_blank" rel="noopener" aria-label="LinkedIn" data-en="LinkedIn" data-tr="LinkedIn">💼 LinkedIn</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#education" data-en="Education" data-tr="Eğitim">Education</a>
+            <a href="#skills" data-en="Skills" data-tr="Yetenekler">Skills</a>
+            <a href="#projects" data-en="Projects" data-tr="Projeler">Projects</a>
+            <a href="#experience" data-en="Experience" data-tr="Deneyim">Experience</a>
+            <a href="#contact" data-en="Contact" data-tr="İletişim">Contact</a>
+        </nav>
+    </header>
+
+    <section id="summary">
+        <h2 data-en="Summary" data-tr="Özet">Summary</h2>
+        <p data-en="I am a highly motivated and hardworking second-year Computer Engineering student at Karabuk University. I am eager to apply my foundational knowledge in programming, data structures, and problem-solving to practical projects and gain valuable experience in the field. I possess a proactive learning attitude and a strong interest in web development and Data Science. I am seeking opportunities to contribute to innovative teams and further develop my technical expertise."
+           data-tr="Karabük Üniversitesi'nde bilgisayar mühendisliği 2. sınıf öğrencisiyim. Programlama, veri yapıları ve problem çözme konularında temel bilgimi gerçek projelerde uygulamak ve bu alanda değerli deneyim kazanmak istiyorum. Proaktif öğrenme tutumum ve web geliştirme ile Veri Bilimi alanına olan ilgim var. Yenilikçi takımlarda katkı sağlamak ve teknik uzmanlığımı geliştirmek istiyorum.">
+           I am a highly motivated and hardworking second-year Computer Engineering student at Karabuk University. I am eager to apply my foundational knowledge in programming, data structures, and problem-solving to practical projects and gain valuable experience in the field. I possess a proactive learning attitude and a strong interest in web development and Data Science. I am seeking opportunities to contribute to innovative teams and further develop my technical expertise.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2 data-en="Education" data-tr="Eğitim">Education</h2>
+        <div class="degree">
+            <h3 data-en="Computer Engineering, B.Sc." data-tr="Bilgisayar Mühendisliği, Lisans">Computer Engineering, B.Sc.</h3>
+            <p class="university" data-en="Karabuk University" data-tr="Karabük Üniversitesi">Karabuk University</p>
+            <p class="duration" data-en="Expected Graduation: 2027" data-tr="Beklenen Mezuniyet: 2027">Expected Graduation: 2027</p>
+            <p data-en="GPA: 3.2" data-tr="Not Ortalaması: 3.2">GPA: 3.2</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-en="Skills" data-tr="Yetenekler">Skills</h2>
+        <ul>
+            <li data-en="Programming Languages: C, Java, PHP" data-tr="Programlama Dilleri: C, Java, PHP">Programming Languages: C, Java, PHP</li>
+            <li data-en="Web Technologies: HTML, CSS, JavaScript" data-tr="Web Teknolojileri: HTML, CSS, JavaScript">Web Technologies: HTML, CSS, JavaScript</li>
+            <li data-en="Databases: MySQL" data-tr="Veritabanları: MySQL">Databases: MySQL</li>
+            <li data-en="Problem Solving" data-tr="Problem Çözme">Problem Solving</li>
+            <li data-en="Logical Thinking" data-tr="Mantıksal Düşünme">Logical Thinking</li>
+            <li data-en="Teamwork" data-tr="Takım Çalışması">Teamwork</li>
+            <li data-en="Communication" data-tr="İletişim">Communication</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2 data-en="Projects" data-tr="Projeler">Projects</h2>
+        <div class="project">
+            <h3 data-en="Zoo Database Project" data-tr="Hayvanat Bahçesi Veritabanı Projesi">Zoo Database Project</h3>
+            <p class="description" data-en="A database project about the zoo, animals, and their behaviors."
+               data-tr="Hayvanat bahçesi, hayvanlar ve davranışları hakkında bir veritabanı projesi.">
+               A database project about the zoo, animals, and their behaviors.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 data-en="Experience" data-tr="Deneyim">Experience</h2>
+        <p data-en="I currently do not have any formal work experience, but I am actively seeking opportunities to gain practical experience."
+           data-tr="Şu anda resmi bir iş deneyimim yok ancak pratik deneyim kazanmak için aktif olarak fırsat arıyorum.">
+           I currently do not have any formal work experience, but I am actively seeking opportunities to gain practical experience.
+        </p>
+  
+    </section>
+    <section id="contact">
+        
+<p>
+  <span data-en="You can reach me via email at:" data-tr="Bana e-posta yoluyla ulaşabilirsiniz:">
+    You can reach me via email at:
+  </span>
+  <a href="mailto:yasin.sariaslann@gmail.com">yasin.sariaslann@gmail.com</a>
+</p>
+
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Yasin Mahmut Sariaslan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
